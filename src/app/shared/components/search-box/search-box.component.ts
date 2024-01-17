@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-search-box',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class SearchBoxComponent {
+  @Input('placeholder1')
+  public placeholder:string='';
 
+  @Output()
+  public sendValue=new EventEmitter<string>();
+
+  search(value:string):void{
+    this.sendValue.emit(value)
+  }
 }

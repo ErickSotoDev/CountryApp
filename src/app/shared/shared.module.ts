@@ -25,7 +25,8 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
     HomepageComponent,
     AboutPageComponent,
     SidebarComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    SearchBoxComponent
   ]
 })
 export class SharedModule { }

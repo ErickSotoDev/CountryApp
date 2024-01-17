@@ -2,7 +2,7 @@
 <hr>
 <div class="row">
   <div class="col">
-    <input class="form-control" type="text" placeholder="search by capital">
+    <app-search-box placeholder1="Search by capital" (sendValue)="searchByCapital($event)"></app-search-box>
   </div>
 </div>
 <div class="row">
